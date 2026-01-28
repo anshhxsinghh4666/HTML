@@ -1,0 +1,66 @@
+<!-- TABLES : HTML table is used to display data in rows and columns. -->
+
+<!-- 
+<table> → creates table
+<tr> → table row
+<th> → table heading (bold + centered by default)
+<td> → table data cell
+<caption> → table title
+<thead> → table header section
+<tbody> → main body section
+<tfoot> → table footer section
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <table border="1">
+    <caption>
+      Student Data
+    </caption>
+
+    <tr>
+      <th colspan="2">INFORMATION</th>
+      <!-- Merge columns and write. colspan="2" means number of columns merged-->
+    </tr>
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Ansh</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>Sabnam</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>Harsh</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <td>Darsh</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>364</td>
+      </tr>
+    </tfoot>
+  </table>
+</html>
