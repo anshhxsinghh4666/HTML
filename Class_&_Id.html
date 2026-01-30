@@ -1,0 +1,63 @@
+<!-- CLASS & ID : 
+    
+class        → groups multiple elements for CSS or JavaScript
+.classname   → used in CSS to select elements with that class
+
+id           → unique identifier for a single element
+#idname      → used in CSS to select an element with that id
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Class and ID Example</title>
+
+    <style>
+      /* Class style */
+      .redText {
+        color: red;
+        font-size: 20px;
+      }
+
+      /* ID style */
+      #mainTitle {
+        color: blue;
+        text-align: center;
+      }
+
+      /* New class for grouped divs */
+      .group1 {
+        background-color: lightgray;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      /* Individual IDs */
+      #id1 {
+        color: green;
+      }
+
+      #id2 {
+        color: purple;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ID example -->
+    <h1 id="mainTitle">Welcome to My Website</h1>
+
+    <!-- Class example -->
+    <p class="redText">This paragraph is red.</p>
+    <p class="redText">This is also red using same class.</p>
+
+    <!-- Class + ID combined example -->
+    <div id="id1" class="group1">
+      This is Div 1 using same class but unique ID.
+    </div>
+
+    <div id="id2" class="group1">
+      This is Div 2 using same class but unique ID.
+    </div>
+  </body>
+</html>
