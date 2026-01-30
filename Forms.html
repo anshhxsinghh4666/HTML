@@ -1,0 +1,39 @@
+<!-- FORMS : Forms are used to collect data from the user. 
+ 
+action        → URL where form data is sent  
+
+<input>       → takes user input  
+type          → defines input type (text, email, password, etc.)  
+name          → identifies input data when form is submitted  
+id            → unique identifier (used with label & JS)  
+value         → default/stored value of input  
+placeholder   → hint text inside input  
+required      → makes input mandatory  
+
+<label>       → defines label for input  
+for           → connects label to input using id  
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/action.php">
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <br />
+      <label for="id1">
+        <input type="radio" value="class X" name="class" id="id1" />class X
+      </label>
+      <br />
+      <label for="id2">
+        <input type="radio" value="class XI" name="class" id="id2" />class XI
+      </label>
+    </form>
+  </body>
+</html>
