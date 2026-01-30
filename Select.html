@@ -1,0 +1,79 @@
+<!-- SELECT : Creates a drop-down list for users to choose an option. 
+ 
+<select>        → creates dropdown list
+<option>        → items inside dropdown
+name            → sends selected value in form
+value           → value sent to server
+selected        → default selected option
+multiple        → allows multiple selections
+
+Syntax : 
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </select>
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registration Form</h2>
+  <form action="/action.php">
+    <input type="text" placeholder="Username" />
+    <br /><br>
+    <input type="password" placeholder="Password" />
+    <br /><br /><br />
+    <!-- Radio :  -->
+    <h3>Select your Class :</h3>
+    <label for="id1">
+      <input type="radio" value="class X" name="class" id="id1" />class X
+    </label>
+    <br />
+    <label for="id2">
+      <input type="radio" value="class XI" name="class" id="id2" />class XI
+    </label>
+    <br /><br /><br />
+    <!-- Checkbox :  -->
+    <h3>Select your Subject : </h3>
+    <br>
+    <label for="chem">
+      <input type="checkbox" value="Chemistry" name="subject" id="101" />Chemistry
+    </label>
+    <br />
+    <label for="phy">
+      <input type="checkbox" value="Physics" name="subject" id="102" />Physics
+    </label>
+    <br />
+    <label for="chem">
+      <input type="checkbox" value="Maths" name="subject" id="103" />Maths
+    </label>
+    <br />
+    <label for="Web Dev">
+      <input type="checkbox" value="Web Dev" name="subject" id="104" />Web Dev
+    </label>
+    <br><br><br>
+    <!-- Textarea :  -->
+    <textarea name="feedback" id="101" placeholder="Please give you feedback here" rows="5">Feedback</textarea>
+    <br><br>
+    <h3>Select your City : </h3>
+    <select name="city">
+      <option value="Delhi">Delhi</option>
+      <option value="Banglore">Banglore</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Hydrabad">Hydrabad</option>
+    </select>
+    <br><br><br>
+
+    <!-- Submit Button :  -->
+    <input type="Submit" value="Submit">
+  </form>
+</body>
+
+</html>
