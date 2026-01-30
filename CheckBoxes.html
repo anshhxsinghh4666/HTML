@@ -1,0 +1,59 @@
+<!-- CHECKBOX : A checkbox allows users to select one or more options from a list.
+
+Input Types : 
+  -> checkbox : Allows to select multiple options 
+  -> radio : Allows to select only one option
+  -> textarea : Provides a text area like a feedback box
+  
+type="checkbox"  → creates checkbox
+name             → name used to send data to server
+value            → value sent when selected
+checked          → checkbox selected by default
+id               → unique identifier
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/action.php">
+    <input type="text" placeholder="Username" />
+    <br />
+    <input type="password" placeholder="Password" />
+    <br /><br /><br />
+    <h3>Select your Class :</h3>
+    <label for="id1">
+      <input type="radio" value="class X" name="class" id="id1" />class X
+    </label>
+    <br />
+    <label for="id2">
+      <input type="radio" value="class XI" name="class" id="id2" />class XI
+    </label>
+    <br /><br /><br />
+    <label for="chem">
+      <input type="checkbox" value="Chemistry" name="subject" id="101" />Chemistry
+    </label>
+    <br />
+    <label for="phy">
+      <input type="checkbox" value="Physics" name="subject" id="102" />Physics
+    </label>
+    <br />
+    <label for="chem">
+      <input type="checkbox" value="Maths" name="subject" id="103" />Maths
+    </label>
+    <br />
+    <label for="Web Dev">
+      <input type="checkbox" value="Web Dev" name="subject" id="104" />Web Dev
+    </label>
+    <br><br><br>
+    <textarea name="feedback" id="101" placeholder="Please give you feedback here" row="5">Feedback</textarea>
+  </form>
+</body>
+
+</html>
