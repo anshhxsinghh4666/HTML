@@ -1,0 +1,59 @@
+<!-- iFRAME : Is used to embed another webpage or content inside a webpage. 
+ 
+Syntax : <iframe src="page.html"></iframe>
+
+src      → URL of page to display
+width    → iframe width
+height   → iframe height
+title    → description for accessibility
+etc......
+  
+
+Video Tag : Is used to embed video in a webpage.
+
+Synyax : <video src="video.mp4" controls></video>
+
+src        → video file path
+controls   → shows play/pause controls
+autoplay   → plays video automatically
+loop       → repeats video
+muted      → starts video without sound
+width      → video width
+height     → video height
+etc......
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Video and Iframe Example</title>
+</head>
+
+<body>
+
+  <h1>Iframe Example</h1>
+
+  <!-- Iframe showing another webpage -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=eq58NpFys2luuRu-"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <hr>
+
+  <h1>Video Example</h1>
+
+  <!-- Video Player -->
+  <video width="400" controls loop>
+    <source src="Images/OG Final 2025.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+
+</body>
+
+</html>
