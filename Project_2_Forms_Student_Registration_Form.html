@@ -1,0 +1,82 @@
+<!-- Q. Write an HTML program to create a Student Registration Form with the following fields:
+Student Name (Text box)
+Roll Number (Text box)
+Email (Email field)
+Password (Password field)
+Gender (Radio buttons – Male / Female)
+Subjects (Checkbox – Math, Science, English)
+Branch (Dropdown – CSE, IT, ECE, ME)
+Date of Birth (Date picker)
+Address (Textarea)
+Submit and Reset buttons -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <form action="/action.php">
+
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" name="student_name" placeholder="Enter Student Name"><br><br>
+
+        <label for="roll">Roll Number:</label><br>
+        <input type="text" id="roll" name="roll_number" placeholder="Enter Roll No."><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+
+        Gender:<br>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="Male"> Male
+        </label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        Subjects:<br>
+        <input type="checkbox" id="math" name="subjects" value="Math">
+        <label for="math">Math</label>
+
+        <input type="checkbox" id="science" name="subjects" value="Science">
+        <label for="science">Science</label>
+
+        <input type="checkbox" id="english" name="subjects" value="English">
+        <label for="english">English</label><br><br>
+
+        <label for="branch">Branch:</label><br>
+        <select id="branch" name="branch">
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="ME">ME</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
+
+
+<!-- <!doctype html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=<device-width>, initial-scale=1.0" /> <title>Student Registration Form</title> </head> <body> <form action="/action.php"> <h1><b>STUDENT REGISTRATION FORM</b></h1> <br /><br /><br /><br /> <h3>Student Name :</h3> <label for="id1"> <input type="text" placeholder="Enter Student Name" /> </label><br /><br /> <h3>Roll Number :</h3> <label for="id2"> <input type="text" placeholder="Enter Roll No." /> </label> <h3>Email :</h3> <label for="id3"> <input type="email" placeholder="Enter EmailId" /> </label> <h3>Roll Number</h3> <label for="id4"> <input type="password" placeholder="Enter Password" /> </label> <h3>Gender :</h3> <label for="gender_male"> <input type="radio" id="gender_male" name="gender" value="Male" /> Male </label><br> <label for="id6"> <input type="radio" value="Female" name="Female" id="102" /> Female </label> <h3>Subjects :</h3> <label for="id7"> <input type="checkbox" value="Maths" name="Maths" id="103" /> Maths </label><br> <label for="id8"> <input type="checkbox" value="Science" name="Science" id="104" /> Science </label><br> <label for="id9"> <input type="checkbox" value="English" name="English" id="105" /> English </label><br> <h3>Select Branch : </h3> <select name="Branch"> <option value="CSE">CSE</option> <option value="IT">IT</option> <option value="ECE">ECE</option> <option value="ME">ME</option> </select> <h3>Enter DOB : </h3> <label for="id10"> <input type="date" name="DOB"> </label><br> <h3>Enter Address</h3> <textarea name="Address" id="111" placeholder="Enter Address" row="4" cols="30">Enter Address</textarea> <br><br> <input type="button" value="Submit"> <input type="button" value="Reset"> </form> </body> </html> -->

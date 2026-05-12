@@ -10,6 +10,8 @@ name             → name used to send data to server
 value            → value sent when selected
 checked          → checkbox selected by default
 id               → unique identifier
+
+NOTE : for and id should match
 -->
 
 <!doctype html>
@@ -40,24 +42,26 @@ id               → unique identifier
     <!-- Checkbox :  -->
     <h3>Select your Subject : </h3>
     <br>
-    <label for="chem">
-      <input type="checkbox" value="Chemistry" name="subject" id="101" />Chemistry
+    <label for="101">
+      <input type="checkbox" value="Chemistry" name="subject[]" id="101" />Chemistry
     </label>
     <br />
-    <label for="phy">
-      <input type="checkbox" value="Physics" name="subject" id="102" />Physics
+    <label for="102">
+      <input type="checkbox" value="Physics" name="subject[]" id="102" />Physics
     </label>
     <br />
-    <label for="chem">
-      <input type="checkbox" value="Maths" name="subject" id="103" />Maths
+    <label for="103">
+      <input type="checkbox" value="Maths" name="subject[]" id="103" />Maths
     </label>
     <br />
-    <label for="Web Dev">
-      <input type="checkbox" value="Web Dev" name="subject" id="104" />Web Dev
+    <label for="104">
+      <input type="checkbox" value="Web Dev" name="subject[]" id="104" />Web Dev
     </label>
     <br><br><br>
     <!-- Textarea :  -->
-    <textarea name="feedback" id="101" placeholder="Please give you feedback here" row="5">Feedback</textarea>
+    <textarea name="feedback" id="105" placeholder="Please give you feedback here" rows="5"></textarea>
+    <br>
+    <button type="submit">submit</button>
   </form>
 </body>
 
